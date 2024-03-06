@@ -1,11 +1,8 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: rgba(46, 54, 102, 1);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,4 +10,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-image: url('/background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
