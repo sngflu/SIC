@@ -1,11 +1,10 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './header/header'
-import MainPage from './mainPage/mainPage'
-import ResultPage from './resultPage/resultPage'
+import Header from './components/header/header'
+import MainPage from './components/mainPage/mainPage'
+import ResultPage from './components/resultPage/resultPage'
 
 function App() {
-
   return (
     <Router>
       <div className='App'>
