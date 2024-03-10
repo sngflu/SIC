@@ -53,6 +53,23 @@
     margin-bottom: -2vh;
 }
 
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.processing-text {
+    font-size: 2vh;
+    margin-bottom: -1vh;
+}
+
+.circle {
+    margin-top: 2vh;
+    width: 4vw;
+}
+
 .center-text {
     font-size: 3.5vh;
     font-family: 'Roboto', sans-serif;
