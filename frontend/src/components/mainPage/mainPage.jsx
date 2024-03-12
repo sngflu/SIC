@@ -5,7 +5,7 @@ import './mainPage.css';
 import robot from '../../assets/robot.png';
 import cctv from '../../assets/cctv.png';
 import hands from '../../assets/hands.png';
-import loading from '../../../6.svg'
+import loading from '../../assets/loading.svg'
 
 const MainPage = () => {
     const fileInputRef = useRef(null);
