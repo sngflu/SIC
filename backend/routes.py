@@ -16,7 +16,8 @@ def processing():
     filename = file.filename
     file.save(filename)
 
-    video_filename = video_processing.process_video(filename)
+    confidence_threshold = 0.6
+    video_filename = video_processing.process_video(filename, confidence_threshold)
 
     return jsonify({'video_url': video_filename}), 200
 

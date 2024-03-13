@@ -9,13 +9,13 @@ def convert_avi_to_mp4(input_file, output_file):
     video = VideoFileClip(input_file)
     video.write_videofile(output_file, codec='libx264')
 
-def process_video(filename):
+def process_video(filename, confidence_threshold=0.25):
     cap = cv2.VideoCapture(filename)
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     print("Количество кадров в видео:", total_frames)
     cap.release()
 
-    model.model(filename, save=True, save_txt=True)
+    model.model(filename, save=True, save_txt=True, conf=confidence_threshold)
 
     video_filename = filename.split('.')[0] + '.avi'
     os.remove(filename)
