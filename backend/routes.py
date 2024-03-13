@@ -17,9 +17,8 @@ def processing():
     file.save(filename)
 
     confidence_threshold = 0.6
-    video_filename = video_processing.process_video(filename, confidence_threshold)
-
-    return jsonify({'video_url': video_filename}), 200
+    video_filename, frame_objects, fps = video_processing.process_video(filename, confidence_threshold)
+    return jsonify({'video_url': video_filename, 'frame_objects': frame_objects, 'fps': fps}), 200
 
 @bp.route('/video/<path:filename>')
 def serve_video(filename):

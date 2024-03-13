@@ -41,7 +41,7 @@ const MainPage = () => {
                 }
             });
             console.log('Response from backend:', response.data);
-            navigate('/result', { state: { video_url: response.data.video_url } });
+            navigate('/result', { state: { video_url: response.data.video_url, frame_objects: response.data.frame_objects } });
         } catch (error) {
             console.error('Error sending video to backend:', error);
         } finally {
